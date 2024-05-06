@@ -1,0 +1,89 @@
+{
+    "pageTextData": [
+        {
+            "title": "Soda",
+            "subtitle": "Wonder",
+            "description": "Wonderful Soda Adventure"
+        },
+        {
+            "title": "Soda Wonder",
+            "subtitle": "A wonderful selection of soda drinks",
+            "description": "The Coca Cola Company is the worlds leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands. NOTE: this website may take a while to load due to the size of the Sprite model",
+            "url": "./assets/images/main_3D.png"
+        },
+        {
+            "title": "Coca-Cola",
+            "subtitle": "New York Harbor, 1886",
+            "url": "./assets/images/coca_cola.png"
+        },
+        {
+            "title": "Sprite",
+            "subtitle": "West Germany, 1959",
+            "url": "./assets/images/sprite.png"
+        },
+        {
+            "title": "Dr Pepper",
+            "subtitle": "Texas, 1885",
+            "url": "./assets/images/dr_pepper.png"
+        },
+        {
+            "title": "Fanta",
+            "subtitle": "Germany, 1941",
+            "url": "./assets/images/fanta.png"
+        },
+        {
+            "title": "About",
+            "description": "Welcome to Soda Wonder, where passion meets carbonation! At Soda Wonder, we're dedicated to celebrating the diverse world of sodas. Our mission is simple: to provide soda enthusiasts with a platform to explore, discover, and savor unique fizzy creations from around the globe. Whether you're a die-hard cola fan or an adventurous soda connoisseur seeking the latest craft concoctions, Soda Wonder is your go-to destination. Join us on a journey of flavor exploration, where every pop of the cap brings excitement and delight. From classic favorites to limited edition releases, we're here to quench your thirst for soda knowledge and appreciation. So, raise your glass and join us in raising the bar for soda enjoyment!"
+        },
+        {
+            "title": "3D App Contact Details",
+            "subtitle": "Address: 123 Fake Street",
+            "description": "Email: cp414@sussex.ac.uk"
+        },
+        {
+            "title": "Statement of Originality",
+            "description": "This assignment is submitted as part requirement for the degree of MSc Advanced Computer Science at the University of Sussex. It is the product of my own labour except where noted."
+        },
+        {
+            "title": "3D Images",
+            "description": "3D images rendered in 3ds Max 2025."
+        },
+        {
+            "title": "Camera Views",
+            "description": "These buttons select a range of X3D model viewpoints."
+        },
+        {
+            "title": "Animation Options",
+            "description": "These buttons select a range of X3D animation options."
+        },
+        {
+            "title": "Render and Lighting Options",
+            "description": "These buttons select a range of render and lighting options."
+        },
+        {
+            "title": "Texture Switching Options",
+            "description": "These buttons select a range of texture options."
+        },
+        {
+            "url1": "textures/coketexture1.jpg",
+            "url2": "textures/coketexture2.jpg",
+            "url3": "textures/coketexture3.jpg"
+        },
+        {
+            "url1": "textures/spritetexture1.jpg",
+            "url2": "textures/spritetexture2.jpg",
+            "url3": "textures/spritetexture3.jpg"
+        },
+        {
+            "url1": "textures/drpeppertexture1.jpg",
+            "url2": "textures/drpeppertexture2.jpg",
+            "url3": "textures/drpeppertexture3.jpg"
+        },
+        {
+            "url1": "textures/fantatexture1.jpg",
+            "url2": "textures/fantatexture2.jpg",
+            "url3": "textures/fantatexture3.jpg"
+        }
+    ]
+}
+    

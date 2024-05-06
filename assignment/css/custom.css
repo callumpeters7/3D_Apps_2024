@@ -1,0 +1,523 @@
+@font-face {
+	font-family: cocaColaFont;
+	src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url(../assets/fonts/Open_Sans/OpenSans-Regular.TTF);
+}
+
+@font-face {
+	font-family: Oswald;
+	src: url(../assets/fonts/Oswald/static/Oswald-Regular.TTF);
+}
+
+
+/* X-Small devices (portrait phones, less than 576px)
+   No media query for `xs` since this is the default in Bootstrap
+*/    
+
+body {
+
+    min-height:100vh;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(170, 224, 219);
+}
+
+.main_contents { 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-brand{
+    margin-left: 5px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald';
+}
+
+#background_welcome {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+#main_text {
+    float:left;
+    margin: 5%;
+    width: 90%;
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#main_text h2 {
+    color: black;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#main_text h3{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#main_text p{
+    font-size: 14px;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    /* border-radius: .25rem;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(182, 231, 243, 1.0);
+}
+
+#gallery_images a img{
+    transition: transform .2s;
+    transform: scale(1);
+}
+
+#gallery_images a img:hover{
+    transform: scale(1.2);
+}
+
+
+.logohover{
+    transition: transform .2s;
+    transform: scale(0.8);
+}
+
+.logohover:hover{
+    transform: scale(1);
+}
+
+/* CSS rule to style the mobile logo */
+.logo {
+    margin-top: 3px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.logo h1 {
+    font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+    font-size: 44px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+    padding-bottom:5px;
+}
+
+.logo p {
+    font-size: 9px; /* You may have to tweak this to get a good fit */
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 7px;
+}
+
+#logomain {
+    list-style:none; padding:0;
+
+}
+
+#logo1_fetch {
+    padding-left:10px;
+}
+
+#logo3_fetch {
+    float:left;
+}
+
+/* New CSS rules to better position the navbar and increase its height, Bootstrap defaults tend to make your site look like a Bootstrap clone! 
+*/
+.navbar_coca_cola {
+    background-color: #760003; /* Set navbar background color */
+    /* border-color: yellow; Sets the navbar border color */
+    /* border-style: solid; */
+    border-width: 0px;
+    min-height: 70px;
+}
+
+.navbar_coca_cola div{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.navbar_coca_cola button{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+/* CSS rule to overwrite the navbar-brand font color
+*/
+.navbar_coca_cola .navbar-brand {
+    color: rgb(245, 235, 235);
+ }
+    
+/* CSS rule to overwrite the navbar-brand font hover color
+*/
+.navbar_coca_cola .navbar-brand:hover {
+    color: green;
+}
+
+/* CSS rules to overwrite the position of the Bootstrap menu. These are derived from the
+Bootstrapbay Bootstrap Tutorial Part 11 — CSS Modifications to Navbar and Buttons shows how to do this using Bootstrap 3, the principle should be the same: https://www.youtube.com/watch?v=7v2yC3GyDHU   
+
+There is plenty more styling to do than indicated here, in mobile it still defaults to Bootstrap CSS on dropdown!
+*/
+
+.navbar_coca_cola .navbar-nav > li > a {
+    color: white;  
+}
+
+/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+*/
+.navbar_coca_cola .navbar-nav > li > a:hover, 
+.navbar_coca_cola .navbar-nav > li > a:focus {
+    color: green;  
+}
+
+.navbar_coca_cola .navbar-nav .nav-item {
+    margin-top: 0px;
+}
+
+/* CSS rule to overwrite the bootstrap.css rules for setting the active font color and background colour
+*/
+.navbar_coca_cola .navbar-nav .nav-item > .active, 
+.navbar_coca_cola .navbar-nav > .active > a:hover, 
+.navbar_coca_cola .navbar-nav > .active > a:focus {
+    color:  #760003; /* Font color for active font */
+    background-color: #3399ff; /* Blue color for background */
+}
+
+/* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
+*/
+    
+/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+*/
+.navbar_coca_cola .navbar-nav > li > a:hover, 
+.navbar_coca_cola  .navbar-nav > li > a:focus {
+    color: green;  
+}
+
+/* These next two CSS rules control the style of the icon bar */
+.navbar_coca_cola .navbar-toggler {
+    border-color: white;
+}
+
+.navbar_coca_cola  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Let's style the dropdown menu
+*/
+
+.dropdown-menu {
+    text-align: -webkit-left;
+    background-color: #b6e7f3;
+    margin-top: 20px; /* Experiment to move the dropdown menu down */
+}
+
+.dropdown-menu .dropdown-item {
+    color: #eb0025;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #030303;
+    background-color: #e98074;
+}
+
+.navbar_coca_cola .navbar-toggler {
+    outline: none !important;
+}
+
+/* CSS rule to style the footer */
+.footer {
+    color: #030303;
+    background-color: #760003; /* Set navbar footer background color same as header */
+    height: 50px;
+    margin-top: auto;
+}
+
+.navbar-text > a {
+    font-size: 10px;
+}
+
+.navbar-text > p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 8px;
+}
+
+.social {
+    padding-top: 0px;
+    width: 30%;   
+}
+
+.fa-twitter-square:before {
+    content: "\f081";
+    color: green;
+    font-size: 1em;
+}
+
+.fa-github-square:before {
+    content: "\f092"; 
+    color: yellow;
+    font-size: 1em;
+}
+
+.fa-google-plus-square:before {
+    content: "\f0d4"; 
+    color: blue;
+    font-size: 1em;
+}
+
+.fa-facebook-square:before {
+    content: "\f082";
+    color: red;
+    font-size: 1em; 
+}
+
+.img-thumbnail{
+    padding: 0.25rem;
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.camera-btns {
+    /* background-color: rgba(0, 0, 255, 0.3);  */
+    border-color: black; 
+    border-style: solid;
+    border-width: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.camera-btns > p  {
+    font-size: 15px;
+    color: red;
+    padding-left: 0px;
+    font-weight: 900; 
+}
+
+.camera-font {
+    font-weight: 400;   
+    color: white;
+}
+
+.camera-font:hover {
+    font-weight: 700;   
+    color: rgb(3, 3, 3);
+}
+
+.btn-responsive {
+    padding: 6px 10px;
+    font-size: 90%;
+    line-height: 1.2;
+    white-space: normal !important;
+}
+
+.gallery-header {
+    color: white;
+}
+
+.gallery-header:hover {
+    color: green;
+    border: 1px solid transparent;
+}
+
+.model3D  {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 1.0);
+    padding: 2px;
+}
+
+X3D, x3d {
+    position:relative;
+    float:left;
+    cursor:pointer;
+    margin:0;
+    padding:0;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 0, 0, 1.0);
+    width: 100%;
+    height: 100%;
+}
+
+.img-thumbnail{
+    padding:0.25rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width:100%;
+    height:auto;
+}
+
+.gallery .img-thumbnail{
+    background-color: rgba(255,255,255,0.0);
+    padding: 0.25rem;
+    margin: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 43%;
+    height:auto;
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: #257600;
+        height: 60px;
+    }
+    
+    .navbar-text > a {
+        font-size: 10px;
+    }
+    
+    .navbar-text > p {
+        color: rgb(228, 75, 15);
+        font-size: 18px;
+    }
+    
+    .copyright {
+        padding-top: 7px;
+    }
+    
+    .social {
+        padding-top: 7px;
+    }
+    
+    .model3D  {
+        background-color: rgba(255, 255, 255, 0.2); 
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 1.0);
+        padding: 2px;
+        height: 200px;
+    }
+}
+    
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {     
+    
+    body{
+        background-color:#c5be7a;
+    }
+    .card{
+        background-color:#c5be7a;
+    }
+    .navbar_coca_cola {
+        background-color: #555854;
+    }
+    .footer {
+        background-color: #dba7da;
+    } 
+    .model3D  {
+        background-color: rgba(255, 255, 255, 0.2); 
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 1.0);
+        padding: 2px;
+        height: 400px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    body{
+        background-color:#7a7a7a;
+    }
+    .card{
+        background-color:#7a7a7a;
+    }
+    .navbar_coca_cola {
+        background-color: #555854;
+    }
+    .footer {
+        background-color: #555854;
+    }
+    .model3D  {
+        background-color: rgba(255, 255, 255, 0.2); 
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 1.0);
+        padding: 2px;
+        height: 400px;
+    }
+
+
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {   
+
+    body{
+        background-color:#7a7a7a;
+    }
+    .card{
+        background-color:#7a7a7a;
+    }
+    .navbar_coca_cola {
+        background-color: #555854;
+    }
+    .footer {
+        background-color: #555854;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    
+body{
+    background-color:rgb(170, 224, 219);
+}
+.card{
+    background-color:rgba(182, 231, 243, 1.0);
+}
+.navbar_coca_cola {
+    background-color: #760003;
+}
+.footer {
+    background-color: #760003;
+} 
+
+.model3D  {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 1.0);
+    padding: 2px;
+    height: 500px;
+}
+}
